@@ -73,7 +73,7 @@ public class ElectricCar extends ACar {
 
 
 
-        String info = "\n" + "Power source: Electricity" + "\n"+ "WhPrKm: " + getWhPrKm() +
+        String info = "\n" + "Power source: Electricity" + "\n"+ "Wh/Km: " + getWhPrKm() +
                 "\n" + "Registration fee: " + getRegistrationFee() + " kr." +
         "\n"+"**************************************";
 
