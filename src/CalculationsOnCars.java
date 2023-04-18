@@ -1,4 +1,11 @@
+
 public class CalculationsOnCars {
+
+
+    /* Attributes necessary for the calculationOfRegistrationFee method. The instantiations of these
+    attributes happens in 3 different constructors depending on which type of car is passed as argument,
+    when this class is instantiated
+     */
 
     String energySource;
 
@@ -11,6 +18,10 @@ public class CalculationsOnCars {
 
 
 
+
+    // Making 3 different constructors (Polymorphy) for each type of car the calculationOfRegistrationFee
+    // can do calculations on. The different information enabled by the different Car arguments in the 3 constructors
+    // is used in the calculationOfRegistrationFee method
 
 
     public CalculationsOnCars(ElectricCar car) {
@@ -44,9 +55,12 @@ public class CalculationsOnCars {
     public int calculationOfRegistrationFee(){
 
 
+
+        // Variable the registration fee will depend on
         double theKmPrLitre;
 
 
+        // Calculating theKmPrLitre if the Car calculating on is an ElectricCar
         if (energySource.equals("Electricity")) {
 
 
@@ -56,15 +70,25 @@ public class CalculationsOnCars {
         }
 
 
+        //theKmPrLitre if the Car calculating on is NOT an ElectricCar
         else {
 
             theKmPrLitre = (double) this.kmPrLitre;
         }
 
 
+        //Variable for the registration fee
         int registrationFee = 0;
 
 
+
+
+        /* Long if-statement (with some nested if-statements) calculating the registration fee.
+        The long if statement checks for the Car's km/l and set the registration fee accordingly
+        The nested if statements checks whether the Cars are DieselCar's and adds an equalization tax
+        to the registration fee accordingly
+
+         */
 
         if (theKmPrLitre > 50) {
 
@@ -133,7 +157,7 @@ public class CalculationsOnCars {
 
         }
 
-        // Checking if the diesel car has a particle filter and adjusting registration fee accordingly
+        // If-statement checking if the DieselCar's has a particle filter and adds 1000 if they don't have this filter
 
         if (this.hasParticleFilter==false) {
 
