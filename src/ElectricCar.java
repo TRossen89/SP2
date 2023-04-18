@@ -18,14 +18,14 @@ public class ElectricCar extends ACar {
     public int getBatteryCapacityKWh(){
 
 
-    return 0;
+    return this.batteryCapacity;
     }
 
 
     // returns the maximum range in kilometres.
     public int getMaxRangeKm(){
 
-        return 0;
+        return this.maxRange;
     }
 
 
@@ -33,12 +33,38 @@ public class ElectricCar extends ACar {
     // returns the power consumption in watt hours per driven kilometre.
     public int getWhPrKm(){
 
-        return 0;
+        int WhPrKm = 0;
+
+        int theBatteryCapacity = this.batteryCapacity * 1000;
+
+        WhPrKm = theBatteryCapacity/this.maxRange;
+
+
+
+
+
+        return WhPrKm;
+
     }
+
+
 
     @Override
     public int getRegistrationFee() {
-        return 0;
+
+        double theRegistrationFee;
+
+
+
+        CalculationsOnCars calculator = new CalculationsOnCars(this);
+
+        theRegistrationFee = calculator.calculationOfRegistrationFee();
+
+
+
+        int registrationFee = (int) theRegistrationFee;
+
+        return registrationFee;
     }
 
 
@@ -46,7 +72,14 @@ public class ElectricCar extends ACar {
     @Override
     public String toString() {
 
-        return super.toString() + "\n" + "Power source: Electricity" + "\n"+"Registration fee: " + getRegistrationFee() +
-                "\n"+"**************************************";
+
+
+        String info = "\n" + "Power source: Electricity" + "\n"+ "WhPrKm: " + getWhPrKm() +
+                "\n" + "Registration fee: " + getRegistrationFee() + " kr." +
+        "\n"+"**************************************";
+
+
+
+        return super.toString() + info;
     }
 }

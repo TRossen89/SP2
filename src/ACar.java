@@ -1,6 +1,11 @@
 public abstract class ACar implements Car {
 
 
+    private static int idCounter = 0;
+
+    private int carId;
+
+
     protected final String registrationNumber;
 
     protected final String make;
@@ -16,11 +21,16 @@ public abstract class ACar implements Car {
         this.numberOfDoors = numberOfDoors;
         this.make = make;
 
+        idCounter ++;
+
+        this.carId = idCounter;
+
     }
 
 
-
-
+    public int getCarId() {
+        return carId;
+    }
 
     @Override
     public int getNumberOfDoors() {
@@ -46,7 +56,9 @@ public abstract class ACar implements Car {
     @Override
     public String toString() {
 
-        String theCar = "Make: "+getMake()+ "\n" + "Model: " + getModel() + "\n" + "Registration number: " +
+        String theCar = "**************************************\n" + "Car number: " + getCarId() +"\n----------------\n" +
+                "" +
+                "Make: "+getMake()+ "\n" + "Model: " + getModel() + "\n" + "Registration number: " +
                 getRegistrationNumber()+ "\n" + "Number of doors: " + getNumberOfDoors();
 
 

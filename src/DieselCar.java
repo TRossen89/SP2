@@ -22,11 +22,14 @@ public class DieselCar extends AFuelCar{
 
     @Override
     public int getRegistrationFee() {
+        int registrationFee;
+
+        CalculationsOnCars calculator = new CalculationsOnCars(this);
+
+        registrationFee = calculator.calculationOfRegistrationFee();
 
 
-
-
-        return 0;
+        return registrationFee;
     }
 
     public String hasParticleFilter(){
@@ -44,13 +47,23 @@ public class DieselCar extends AFuelCar{
     }
 
 
+    // Method added by me to make my CalculatingRegistrationFee class and its method work
+    public boolean getParticleFilterStatus(){
+
+        return this.hasParticleFilter;
+
+    }
+
+
     @Override
     public String toString() {
 
-        return super.toString() + "\n" + "Fuel type: " + getFuelType() + "\n" + "Particle filter (Y/N): " +
-                hasParticleFilter() + "\n" +
-                "Registration fee: " + getRegistrationFee() +
+        String info = "\n" + "Fuel type: " + getFuelType() + "\n" + "Particle filter (Y/N): " +
+                hasParticleFilter() + "\n" + "Km/l: " + this.kmPrLitre + "\n" +
+                "Registration fee: " + getRegistrationFee() + " kr." +
                 "\n"+"**************************************";
+
+        return super.toString() + info;
     }
 
 

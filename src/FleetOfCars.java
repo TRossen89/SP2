@@ -17,7 +17,16 @@ public class FleetOfCars {
 
     public int getTotalRegistrationFeeForFleet(){
 
+
         int totalFee = 0;
+
+        for (Car c: fleet){
+
+            totalFee += c.getRegistrationFee();
+
+        }
+
+
 
         return totalFee;
     }
@@ -26,9 +35,21 @@ public class FleetOfCars {
     @Override
     public String toString() {
 
-        String theFleetOfCars = "The Fleet of cars: \n";
+        String theFleetOfCars = "\n**************************************\nThe fleet of cars";
+
+        int numberOfCarsInFleet = 0;
+
+        for (Car c: fleet) {
+
+            numberOfCarsInFleet += 1;
+
+        }
+
+        theFleetOfCars += "("+ numberOfCarsInFleet + " cars):\n";
+
 
         for (Car c: fleet){
+
 
             theFleetOfCars += "\n"+c;
 
