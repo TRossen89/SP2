@@ -3,10 +3,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        // Instantiating a FleetOfCars
+
         FleetOfCars aFleetOfCars = new FleetOfCars();
 
 
-        // Instantiating GasolineCars to aFleetOfCars
+        // Instantiating GasolineCars
         Car car1 = new GasolineCar("GA 1000 0012", "GM", 5,
                 "Skoda", 12);
 
@@ -21,7 +23,7 @@ public class Main {
 
 
 
-        // Instantiating ElectricCars to aFleetOfCars
+        // Instantiating ElectricCars
 
         Car car5 = new ElectricCar("EL 1018 0095", "EQ fortwo cabrio", 2,
                 "Smart", 18,
@@ -48,7 +50,7 @@ public class Main {
 
 
 
-        // Instantiating DieselCars to aFleetOfCars
+        // Instantiating DieselCars
 
         Car car10 = new DieselCar("DI 1000 0030", "DM", 5,
                 "Volvo", 30,
@@ -78,6 +80,8 @@ public class Main {
                 false);
 
 
+        // Adding all the instatiating cars to aFleetOfCars
+
         aFleetOfCars.addCar(car1);
         aFleetOfCars.addCar(car2);
         aFleetOfCars.addCar(car3);
@@ -93,9 +97,6 @@ public class Main {
         aFleetOfCars.addCar(car13);
         aFleetOfCars.addCar(car14);
         aFleetOfCars.addCar(car15);
-
-
-
 
 
 
