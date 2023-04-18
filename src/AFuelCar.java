@@ -1,6 +1,6 @@
 public abstract class AFuelCar extends ACar{
 
-    int kmPrLitre;
+    private int kmPrLitre;
 
 
     public AFuelCar(String registrationNumber, String model, int numberOfDoors, String make, int kmPrLitre) {
@@ -14,7 +14,7 @@ public abstract class AFuelCar extends ACar{
 
 
 
-    int kmPrLitre(){
+    public int getKmPrLitre(){
 
         return this.kmPrLitre;
 

@@ -1,9 +1,10 @@
 public abstract class ACar implements Car {
 
 
+    // I have added an ID to the Cars for the outprint of the list of cars. ID = Car number in the outprint
     private static int idCounter = 0;
-
     private int carId;
+
 
 
     protected final String registrationNumber;
@@ -20,6 +21,7 @@ public abstract class ACar implements Car {
         this.model = model;
         this.numberOfDoors = numberOfDoors;
         this.make = make;
+
 
         idCounter ++;
 

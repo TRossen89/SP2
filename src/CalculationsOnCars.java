@@ -24,6 +24,7 @@ public class CalculationsOnCars {
     // is used in the calculationOfRegistrationFee method
 
 
+    // Constructor for ElectricCars
     public CalculationsOnCars(ElectricCar car) {
 
         this.whPrKilometer = (double) car.getWhPrKm();
@@ -35,23 +36,25 @@ public class CalculationsOnCars {
 
 
     }
-
+    // Constructor for GasolineCars
     public CalculationsOnCars(GasolineCar car) {
 
         this.energySource = "Gasoline";
-        this.kmPrLitre = car.kmPrLitre;
+        this.kmPrLitre = car.getKmPrLitre();
 
     }
 
-
+    // Constructor for DieselCars
     public CalculationsOnCars(DieselCar car) {
 
         this.energySource = "Diesel";
         this.hasParticleFilter = car.getParticleFilterStatus();
-        this.kmPrLitre = car.kmPrLitre;
+        this.kmPrLitre = car.getKmPrLitre();
 
     }
 
+
+    // The method calculating registration fee of the cars
     public int calculationOfRegistrationFee(){
 
 

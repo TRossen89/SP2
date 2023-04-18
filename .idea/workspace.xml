@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebb0f151-ef28-4b5b-b71e-b8a7e5022519" name="Changes" comment="Corrected and added some comments">
+    <list default="true" id="ebb0f151-ef28-4b5b-b71e-b8a7e5022519" name="Changes" comment="Corrected the classdiagram.puml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/classdiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doc/classdiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ACar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ACar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AFuelCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AFuelCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CalculationsOnCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CalculationsOnCars.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DieselCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DieselCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ElectricCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ElectricCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FleetOfCars.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FleetOfCars.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GasolineCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GasolineCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681813779982</updated>
-      <workItem from="1681813781199" duration="23296000" />
+      <workItem from="1681813781199" duration="24365000" />
     </task>
     <task id="LOCAL-00001" summary="All classes and the basic methods">
       <created>1681820153954</created>
@@ -91,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681839391956</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Comments AND changed the classdiagram.puml">
+      <created>1681840092474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681840092474</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Corrected the classdiagram.puml">
+      <created>1681840163281</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681840163281</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +122,8 @@
     <MESSAGE value="Rest of the assignment" />
     <MESSAGE value="Added som comments to the CalculationsOnCars class" />
     <MESSAGE value="Corrected and added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected and added some comments" />
+    <MESSAGE value="Comments AND changed the classdiagram.puml" />
+    <MESSAGE value="Corrected the classdiagram.puml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the classdiagram.puml" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 public class GasolineCar extends AFuelCar{
 
 
+    // I've added a fuelType for the method calculationOfRegistrationFee in the CalculationsOnCars class
     private String fuelType = "Gasoline";
 
 
@@ -63,7 +64,7 @@ public class GasolineCar extends AFuelCar{
     @Override
     public String toString() {
 
-        String info = "\n" +"Fuel type: Gasoline" +"\n" + "Km/l: "+ this.kmPrLitre +
+        String info = "\n" +"Fuel type: Gasoline" +"\n" + "Km/l: "+ this.getKmPrLitre() +
                 "\n" + "Registration fee: " + getRegistrationFee() + " kr." +
                 "\n"+"**************************************";
 

@@ -1,8 +1,10 @@
 public class DieselCar extends AFuelCar{
 
 
+    // I've added a fuelType attribute for the method calculationOfRegistrationFee in the CalculationsOnCars class
     private String fuelType = "Diesel";
     private boolean hasParticleFilter;
+
 
     public DieselCar(String registrationNumber, String model, int numberOfDoors, String make, int kmPrLitre,
                      boolean hasParticleFilter) {
@@ -59,7 +61,7 @@ public class DieselCar extends AFuelCar{
     public String toString() {
 
         String info = "\n" + "Fuel type: " + getFuelType() + "\n" + "Particle filter (Y/N): " +
-                hasParticleFilter() + "\n" + "Km/l: " + this.kmPrLitre + "\n" +
+                hasParticleFilter() + "\n" + "Km/l: " + this.getKmPrLitre() + "\n" +
                 "Registration fee: " + getRegistrationFee() + " kr." +
                 "\n"+"**************************************";
 

@@ -10,16 +10,16 @@ public class Main {
 
         // Instantiating GasolineCars
         Car car1 = new GasolineCar("GA 1000 0012", "GM", 5,
-                "Skoda", 12);
+                "Skoda", 30);
 
         Car car2 = new GasolineCar("GA 2000 0030", "GM", 5,
-                "BMW", 30);
+                "BMW", 16);
 
         Car car3 = new GasolineCar("GA 3000 0004", "GM", 2,
-                "Lada", 4);
+                "Lada", 8);
 
         Car car4 = new GasolineCar("GA 4000 0016", "GM", 3,
-                "Lada", 16);
+                "Lada", 4);
 
 
 
