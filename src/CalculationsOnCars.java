@@ -7,13 +7,13 @@ public class CalculationsOnCars {
     when this class is instantiated
      */
 
-    String energySource;
+    private String energySource;
 
-    double whPrKilometer;
+    private double whPrKilometer;
 
-    boolean hasParticleFilter = true;
+    private boolean hasParticleFilter = true;
 
-    int kmPrLitre;
+    private int kmPrLitre;
 
 
 

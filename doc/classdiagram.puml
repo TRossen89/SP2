@@ -3,17 +3,39 @@
 interface Car
 abstract ACar
 abstract AFuelCar
-class GasolinCar
+class GasolineCar
 class DieselCar
 class ElectricCar
 class FleetOfCars
 class Main
+
+class CalculationsOnCars
+
+CalculationsOnCars o-- ElectricCar
+CalculationsOnCars o-- DieselCar
+CalculationsOnCars o-- GasolineCar
+
+CalculationsOnCars : - String energySource
+CalculationsOnCars : - double whPrKilometer
+CalculationsOnCars : - boolean hasParticleFilter
+CalculationsOnCars : - int kmPrLitre
+
+
+
+CalculationsOnCars : + CalculationsOnCars(ElectricCar)
+CalculationsOnCars : + CalculationsOnCars(DieselCar)
+CalculationsOnCars : + CalculationsOnCars(GasolineCar)
+
+CalculationsOnCars : + int calculationOfRegistrationFee()
+
+
+
 Main *-- FleetOfCars
 Main : public static void main()
 FleetOfCars *-- Car
 Car <|-- ACar
 ACar <|-- AFuelCar
-AFuelCar <|-- GasolinCar
+AFuelCar <|-- GasolineCar
 AFuelCar <|-- DieselCar
 ACar <|-- ElectricCar
 Car : String getRegistrationNumber()
@@ -49,6 +71,9 @@ FleetOfCars : ArrayList<Car> fleet
 FleetOfCars : void addCar(Car car)
 FleetOfCars : int getTotalRegistrationFeeForFleet()
 FleetOfCars : @override String toString()
-GasolinCar : int getRegistrationFee()
-GasolinCar : @override String toString()
+GasolineCar : int getRegistrationFee()
+GasolineCar : @override String toString()
+
+
+
 @enduml
