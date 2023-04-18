@@ -11,9 +11,9 @@ class Main
 
 class CalculationsOnCars
 
-CalculationsOnCars o-- ElectricCar
-CalculationsOnCars o-- DieselCar
-CalculationsOnCars o-- GasolineCar
+CalculationsOnCars *-- ElectricCar
+CalculationsOnCars *-- DieselCar
+CalculationsOnCars *-- GasolineCar
 
 CalculationsOnCars : - String energySource
 CalculationsOnCars : - double whPrKilometer
