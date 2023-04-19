@@ -3,8 +3,8 @@ public class CalculationsOnCars {
 
 
     /* Attributes necessary for the calculationOfRegistrationFee method. The instantiations of these
-    attributes happens in 3 different constructors depending on which type of car is passed as argument,
-    when this class is instantiated
+    attributes happens in 3 different constructors. Which constructor is being instantiated depends
+    on which type of car is passed as argument when this class is instantiated
      */
 
     private String energySource;
