@@ -19,7 +19,7 @@ public class CalculationsOnCars {
 
 
 
-    // Making 3 different constructors (Polymorphy) for each type of car the calculationOfRegistrationFee
+    // Making 3 different constructors (Polymorphy?) for each type of car the calculationOfRegistrationFee
     // can do calculations on. The different information enabled by the different Car arguments in the 3 constructors
     // is used in the calculationOfRegistrationFee method
 
